@@ -2,7 +2,7 @@
 // getSchool()
 // getRole()—overridden to return 'Intern'
 
-const Engineer = require('../lib/Engineer');
+const Engineer = require('../lib/Intern');
 const egName = "Bob";
 const egId = 1;
 const egEmail = "BobTheBuilder@example.com";
