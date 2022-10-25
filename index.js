@@ -30,4 +30,23 @@ function init() {
         })
 }
 
+function chooseNewMember() {
+    inquirer
+        .prompt([{
+            type: "list",
+            name: "choice",
+            message: "Which type of team member would you like to add?",
+            choices: ["Engineer", "Intern", "None. I have finished building my team"]
+        }])
+        .then(answers => {
+            if (answers.choice === "Engineer") {
+                createEngineer();
+            } else if (answers.choice === "Intern") {
+                createIntern();
+            } else {
+                generateHTML();
+            }
+        })
+}
+
 init()
