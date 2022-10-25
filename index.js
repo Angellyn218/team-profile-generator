@@ -66,10 +66,36 @@ function createEngineer() {
         }, {
             type: "input",
             name: "github",
-            message: "What is the Engineer's github?"
+            message: "What is this Engineer's github?"
         }])
         .then(answers => {
             team.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
+            console.log(team);
+            chooseNewMember();
+        })
+}
+
+function createIntern() {
+    inquirer
+        .prompt([{
+            type: "input",
+            name: "name",
+            message: "What is this Intern's name?"
+        }, {
+            type: "input",
+            name: "id",
+            message: "What is this Intern's employee id?"
+        }, {
+            type: "input",
+            name: "email",
+            message: "What is this Intern's email?"
+        }, {
+            type: "input",
+            name: "school",
+            message: "What is this Intern's school name?"
+        }])
+        .then(answers => {
+            team.push(new Intern(answers.name, answers.id, answers.email, answers.school));
             console.log(team);
             chooseNewMember();
         })
