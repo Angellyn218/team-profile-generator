@@ -1,7 +1,9 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const generateHTML = require('./src/template');
 const team = [];
 
 function init() {
@@ -25,7 +27,6 @@ function init() {
         }])
         .then(answers => {
             team.push(new Manager(answers.name, answers.id, answers.email, answers.officeNumber));
-            console.log(team);
             chooseNewMember();
         })
 }
@@ -44,7 +45,7 @@ function chooseNewMember() {
             } else if (answers.choice === "Intern") {
                 createIntern();
             } else {
-                generateHTML();
+                writeToFile('./dist/team.html');
             }
         })
 }
@@ -70,7 +71,6 @@ function createEngineer() {
         }])
         .then(answers => {
             team.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
-            console.log(team);
             chooseNewMember();
         })
 }
@@ -96,9 +96,14 @@ function createIntern() {
         }])
         .then(answers => {
             team.push(new Intern(answers.name, answers.id, answers.email, answers.school));
-            console.log(team);
             chooseNewMember();
         })
+}
+
+function writeToFile(fileName) {
+    const teamStr = generateHTML(team);
+    fs.writeFile(fileName, teamStr, (err) =>
+        err ? console.log(err) : console.log('Successfully created HTML!'));
 }
 
 init()
