@@ -32,7 +32,7 @@ describe("Employee class", () => {
         expect(cb).toThrow();
     })
 
-    it("Throw error: id not a number", () => {
+    it("Throw error: Id not a number", () => {
         const cb = () => new Employee(egName);
         const err = new Error(
             "Expected a number as the id parameter"
@@ -42,7 +42,7 @@ describe("Employee class", () => {
         expect(cb).toThrowError(err);
     })
 
-    it("Throw error: email not a string", () => {
+    it("Throw error: Email not a string", () => {
         const cb = () => new Employee(egName, egId);
         const err = new Error(
             "Expected a string as the email parameter"
@@ -101,7 +101,7 @@ describe("Employee class", () => {
         expect(obj.getEmail()).toBe(egEmail);
     })
 
-    it("get method returns the name of employee", () => {
+    it("getRole method returns the name of employee", () => {
         const obj = new Employee(egName, egId, egEmail);
 
         expect(obj.getRole()).toBe("Employee");

@@ -27,7 +27,7 @@ describe("Manager Class", () => {
         expect(cb).toThrow();
     })
 
-    it("Throw error: id not a number", () => {
+    it("Throw error: Id not a number", () => {
         const cb = () => new Manager(egName);
         const err = new Error(
             "Expected a number as the id parameter"
@@ -37,7 +37,7 @@ describe("Manager Class", () => {
         expect(cb).toThrowError(err);
     })
 
-    it("Throw error: email not a string", () => {
+    it("Throw error: Email not a string", () => {
         const cb = () => new Manager(egName, egId);
         const err = new Error(
             "Expected a string as the email parameter"
@@ -47,7 +47,7 @@ describe("Manager Class", () => {
         expect(cb).toThrowError(err);
     })
 
-    it("Throw error: officeNumber not a number", () => {
+    it("Throw error: Office Number not a number", () => {
         const cb = () => new Manager(egName, egId, egEmail);
         const err = new Error(
             "Expected a number as the office number parameter"
