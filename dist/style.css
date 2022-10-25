@@ -1,0 +1,48 @@
+.my-team {
+    background-color: rgb(31, 222, 222);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    width: 18rem;
+    margin-top: 20px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 3px 3px 5px gray;
+}
+
+.card-header {
+    background-color: blueviolet;
+    color: white;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.card-title {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.card-subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card ul li {
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    
+}
+
+.container {
+    margin-top: 30px;
+    width: 75%;
+}
