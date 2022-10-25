@@ -49,4 +49,30 @@ function chooseNewMember() {
         })
 }
 
+function createEngineer() {
+    inquirer
+        .prompt([{
+            type: "input",
+            name: "name",
+            message: "What is this Engineer's name?"
+        }, {
+            type: "input",
+            name: "id",
+            message: "What is this Engineer's employee id?"
+        }, {
+            type: "input",
+            name: "email",
+            message: "What is this Engineer's email?"
+        }, {
+            type: "input",
+            name: "github",
+            message: "What is the Engineer's github?"
+        }])
+        .then(answers => {
+            team.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
+            console.log(team);
+            chooseNewMember();
+        })
+}
+
 init()
