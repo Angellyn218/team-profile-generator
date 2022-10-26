@@ -47,7 +47,7 @@ If you select 'None. I have finished building my team', this will generate your 
 
 ![Final screenshot after html is created](assets/images/done.png)
 
-For a walkthrough video of this program, watch [this video](https://watch.screencastify.com/v/6m7hjOAGXymJvyO3jBxm)
+For a walkthrough video of this program, watch [this video](https://watch.screencastify.com/v/rULybzpqiNlvejOtpKDc)
 
 ## Tests
 
