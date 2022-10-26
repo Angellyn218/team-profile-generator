@@ -103,7 +103,7 @@ function createIntern() {
 function writeToFile(fileName) {
     const teamStr = generateHTML(team);
     fs.writeFile(fileName, teamStr, (err) =>
-        err ? console.log(err) : console.log('Successfully created HTML!'));
+        err ? console.log(err) : console.log("Successfully created HTML! (See 'team.html' file in the 'dist' folder for result)"));
 }
 
 init()
