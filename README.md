@@ -2,16 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+When working with a team, it can be good to have a website or place to access information about each team member. To create a team profile, users can run this program. The manager, engineers, and interns' information will be inputed by the user and a website is generated.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-When creating working with a team, it can be good to have a website or place to access information about each team member. To create a team profile, users can run this program. The manager, engineers, and interns' information will be inputed by the user and a website is generated.
-
-While working on this project, I was able to apply what I learned about test creation, classes, and Node.js to a concrete project. I will be sure to use what I learned from creating this project in the future.
+While working on this project, I was able to apply what I learned about test creation, classes, and Node.js to a concrete project. I will be sure to use these skills in the future.
 
 ## Table of Contents
 
@@ -28,7 +21,7 @@ While working on this project, I was able to apply what I learned about test cre
 1. Click on green code button and copy the ssh link
 2. Open up terminal or git bash, then navigate to where you want the repository to be placed.
 3. Type out "git clone (ssh link)"
-4. Make sure to install Node.js. It is necessary to run this program. If you need to, download it from [Node.js website](https://nodejs.org/en/download/).
+4. Be sure to install Node.js. Node.js is necessary to run this program. If you need to, download it from [Node.js website](https://nodejs.org/en/download/).
 5. Once you have installed Node.js, navigate to inside the 'team-profile-generator' folder
 6. Run 'npm install' to install packages within package.json
 
@@ -42,17 +35,19 @@ Once the you have answered the manager questions, you can choose to add a new En
 
 ![multiple choice to add new team member](assets/images/add-new-team-member.png)
 
-If you select 'Engineer', this will bring up the questions for adding an Engineer team member. Once you have answered these questions, the 'Which team member would you like to add' will be shown again.
+If you select 'Engineer', this will bring up the questions for adding an Engineer team member. Once you have answered these questions, the adding a new team membe quesion will be shown again.
 
 ![engineer questions screenshot with user input](assets/images/engineer-questions.png)
 
-If you select 'Intern', this will bring up the questions for adding an Intern team member. Once you have answered these questions, the 'Which team member would you like to add' will be shown again.
+If you select 'Intern', this will bring up the questions for adding an Intern team member. Once you have answered these questions, the adding a new team member question will be shown again.
 
 ![intern questions screenshot with user input](assets/images/intern-questions.png)
 
-If you select 'None. I have finished building my team', this will generate your resulting team profile. This result is the 'team.html' file within the 'dist'.
+If you select 'None. I have finished building my team', this will generate your resulting team profile website. This website result is the 'team.html' file within the 'dist'.
 
 ![Final screenshot after html is created](assets/images/done.png)
+
+For a walkthrough video of this program, watch [this video](https://watch.screencastify.com/v/6m7hjOAGXymJvyO3jBxm)
 
 ## Tests
 
@@ -83,6 +78,9 @@ This test checks that all properties are set on initialization. There are simila
 link email: https://willamette.edu/offices/comm/web/cascadecms/tutorials/links-management/email-link/index.html 
 
 bootstrap for styling: https://getbootstrap.com/docs/5.2/getting-started/introduction/ 
+
+open link in new tab: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ 
+
 
 ## License
 

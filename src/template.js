@@ -5,7 +5,7 @@ function renderEmployees(team) {
         if (team[i].getRole() == "Manager") {
             third = `Office Number: ${team[i].officeNumber}`;
         } else if (team[i].getRole() == "Engineer") {
-            third = `Github: <a href="${team[i].getGithub()}" class="card-link">${team[i].github}</a>`;
+            third = `Github: <a href="${team[i].getGithub()}" class="card-link" target="_blank">${team[i].github}</a>`;
         } else {
             third = `School: ${team[i].school}`
         }
@@ -17,7 +17,7 @@ function renderEmployees(team) {
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${team[i].getId()}</li>
-                            <li class="list-group-item">Email: <a href="mailto:${team[i].getEmail()}" class="card-link">${team[i].getEmail()}</a></li>
+                            <li class="list-group-item">Email: <a href="mailto:${team[i].getEmail()}" class="card-link" target="_blank">${team[i].getEmail()}</a></li>
                             <li class="list-group-item">${third}</li>
                         </ul>
                     </div>
